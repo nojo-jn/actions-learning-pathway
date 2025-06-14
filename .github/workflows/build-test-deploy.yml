@@ -23,4 +23,6 @@ jobs:
         with:
           node-version: '18.x'
       - run: npm install
+      - name: show ESLint config
+        run: cat .eslintrc.json
       - run: npm test
